@@ -44,3 +44,14 @@ numbers[0] = 45;
  numbers.unshift(47);//Adding element in the first position at array using unshift() method
 // numbers.unshift(-4,)
 console.log(numbers)
+
+//Removing element using pop() method
+numbers.pop();
+console.log(numbers);
+
+//Removing an element from first position using shift() method
+
+
+numbers.shift();
+numbers.shift();
+console.log(numbers);
