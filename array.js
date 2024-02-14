@@ -29,29 +29,67 @@ for(var i = 1; i<fibonacci.length; i++){ //{5}
 }
 
 // //Adding element in array using push()method
-var numbers = [0,1,2,3,4,5,6,7,8,9];
-numbers.push(10);
-numbers.push(11);
-numbers.push(12, 13);
-console.log(numbers)
+let numbersAdd = [0,1,2,3,4,5,6,7,8,9];
+numbersAdd.push(10);
+numbersAdd.push(12, 13);
+console.log(numbersAdd)
 
 //Adding element in the first position at array
-for (var i=numbers.length; i>=0; i--){
-    numbers[i] = numbers[i-1];
+for (var i=numbersAdd.length; i>=0; i--){
+    numbersAdd[i] = numbersAdd[i-1];
 }
-numbers[0] = 45;
+numbersAdd[0] = 45;
 
- numbers.unshift(47);//Adding element in the first position at array using unshift() method
+numbersAdd.unshift(47);//Adding element in the first position at array using unshift() method
 // numbers.unshift(-4,)
-console.log(numbers)
+console.log(numbersAdd)
+
+// adding element with splice() method
+numbersAdd.splice(5,0,2,3,4);
+console.log("After using Splice() method the new array:")
+console.log(numbersAdd);
 
 //Removing element using pop() method
-numbers.pop();
-console.log(numbers);
+let numberRemove=[3,5,67,9,34,667,8,78,4,5,7]
+numberRemove.pop();
+console.log(numberRemove);
 
 //Removing an element from first position using shift() method
 
 
-numbers.shift();
-numbers.shift();
-console.log(numbers);
+numberRemove.shift();
+numberRemove.shift();
+console.log(numberRemove);
+
+//<---------Adding and removing elements from a specific position using splice() method----------->
+
+let arraySplice=[2,34,56,57,67,89,8,6876,68,76];
+arraySplice.splice(5,3);//remove three elements, starting from index 5 of our array.
+// This means the numbers [5],numbers [6], and numbers [7] will be removed from the numbers array.
+console.log(arraySplice);
+//splice(), pop(), or
+// shift () methods to remove elements.
+
+//<----------------adding element middle of the array-------------------->
+console.log("arrayIndexCheck:")
+let arrayIndexCheck=[2,3,4,5,6,7,8,9,10,13,41,34,56,78];
+
+ arrayIndexCheck[arrayIndexCheck.length/2-1]=255
+console.log(arrayIndexCheck);
+
+//two dimensional array
+var averageTempDay1 = [72,75,79,79,81,81];
+var averageTempDay2 = [81,79,75,75,73,72];
+var averageTemp = [];
+averageTemp[0] = [72,75,79,79,81,81];
+averageTemp[1] = [81,79,75,75,73,72];
+
+//accessing element in two dimensional array
+function printMatrix(myMatrix){
+    for(let i=0;i<myMatrix.length;i++){
+        for (let j=0;j<myMatrix[i].length;j++){
+            console.log(myMatrix[i][j])
+        }
+    }
+}
+printMatrix(averageTemp);// call function to output array
