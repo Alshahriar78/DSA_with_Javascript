@@ -16,17 +16,7 @@ for(let items of daysOfWeek){
 console.log(daysOfWeek.length);//length of the daysOfWeek array
 
 
-let fibonacci = []; //{1}
-fibonacci[1] = 1; //{2}
-fibonacci[2] = 1; //{3}
-for(let i = 3; i < 20; i++){
-    fibonacci[i] = fibonacci[i-1] + fibonacci[i-2]; ////{4}
 
-}
-
-for(var i = 1; i<fibonacci.length; i++){ //{5}
-    console.log(i + ":" +fibonacci[i]); //{6}
-}
 
 // //Adding element in array using push()method
 let numbersAdd = [0,1,2,3,4,5,6,7,8,9];
