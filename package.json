@@ -2,9 +2,9 @@
   "name": "dsa-with-javascript",
   "version": "1.0.0",
   "description": "",
-  "main": "array.js",
+  "main": "factorial.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "nodemon factorial.js"
   },
   "keywords": [],
   "author": "",

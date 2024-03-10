@@ -1,10 +1,10 @@
-function recursive(n){
-    let number;
-    if(n>1){
-        number = n*(n-1);
-        recursive(n-2);
-        console.log(number)
-    }
-    return number ;
+function factorial(num){
+
+    if(num==0 ){
+        return 1;
+    } else{
+      return num * factorial(num-1);
+    } 
+
 }
-console.log(recursive(5));
+console.log(factorial(5))
