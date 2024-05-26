@@ -12,4 +12,4 @@ let reverse = function(nums) {
     return reverseNumber;
 }
 
-console.log(reverse(2345));
+console.log(reverse(-2345));

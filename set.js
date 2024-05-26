@@ -1,11 +1,7 @@
 const set= new Set([1,2,3,4,4,5]);
-
+set.add(7)
 set.delete(2);
 
-
-for (let i of set){
-    set.add(6);
- console.log(i);
-
-}
-console.log(set.has(6))
+console.log(set.size)
+console.log(set.values())
+console.log(set.keys())
