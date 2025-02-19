@@ -1,6 +1,14 @@
+const lowestValueInArray = (arr)=>{
+     let minValue = arr[0];
+     for(let i = 0; i < arr.length; i++){
+        if(minValue>arr[i]){
+            minValue=arr[i];
+        }
+     }
+     return minValue;
+}
 
-
-
+console.log(lowestValueInArray([40, 100, 1, 5, 25, 10]))
 
 
 
