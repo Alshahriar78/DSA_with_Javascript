@@ -1,25 +1,18 @@
-
-//Opearation for DSA
-let arr=[1,2];
- let min = arr[0];
-for(let i=0;i<arr.length;i++){
-    if(min>arr[i]){
-         min =arr[i];
-         minIndex=i;
+var searchInsert = function(nums, target) {
+    let n = nums.length;
+    for(let i =0; i<n ; i++){
+       if(nums[i]==target){
+          
+           return i;
+       }
+       else if(nums[i]< target && nums[i+1]>target){
+        nums.length ++;
+        
+           nums[i+2] = nums[i+1];
+           nums[i+1] = target;
+           return nums ;
+       }
     }
-}
-let minIndex= arr.indexOf(min);
-let max = arr[minIndex];
-for(let i=minIndex; i<arr.length;i++){
-    if(max<arr[i]){
-        max=arr[i];
-    }
-}
-
-let maxProfit= max-min;
-    if (maxProfit > 0) {
-        console.log(maxProfit);
-    } else {
-        return 0;
-    }
-
+    
+};
+console.log(searchInsert([1,2,3,5,7,8],4))
