@@ -5,10 +5,12 @@
 - This repository serves as a reference for technical interviews, competitive programming, and coding challenges.
 
 <h3>📌 What’s Inside? <h3/>
+  <br>
 - ✅ Data Structures (Arrays,  Stacks, Queues)
 - ✅ Sorting Algorithms (Bubble Sort, Insertion sort, Selection sort)
 - ✅ Searching Algorithms (Binary Search)
 
 <h3>📦 Tech Stack<h3/>
+  <br>
 - JavaScript (ES6+)
 - Node.js (for running algorithms in a local environment)
